@@ -77,6 +77,10 @@ body {
     text-decoration: underline;
 }
 
+.publication-authors.publication-emails a {
+    color: inherit !important;
+}
+
 .author-block {
   display: inline-block;
 }
@@ -131,4 +135,3 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
