@@ -216,11 +216,11 @@
         <figure>
           <img
             src="static/images/cycle_consistency_3d_no_axes.svg"
-            alt="Before-and-after comparison of correspondence paths among three object instances, showing a 95.6 mm closure gap before refinement and no gap afterward"
+            alt="Before-and-after comparison showing conflicting object matches before refinement and consistent matches afterward"
             loading="lazy"
           >
           <figcaption class="content has-text-justified mt-4">
-            PROSE links corresponding 3D points across three instances of the same object: <em>A</em> (blue), <em>B</em> (orange), and <em>C</em> (green). <strong>Left:</strong> when each pair is matched independently, following <em>A</em>&rarr;<em>B</em> (blue) and then <em>B</em>&rarr;<em>C</em> (purple) reaches a different point on <em>C</em> than the direct <em>A</em>&rarr;<em>C</em> match (orange dashed), leaving a 95.6&nbsp;mm closure gap shown in red. <strong>Right:</strong> joint refinement makes both paths end at the same point, closing the cycle and producing globally consistent correspondences. The top row uses uniform colors for clarity; the bottom row shows the same point clouds with their original RGB texture. The point clouds are separated only to make the visualization easier to read.
+            This figure shows how PROSE makes matches between multiple copies of the same object more reliable. On the left, each pair of objects is matched separately, which can produce conflicting results. On the right, PROSE considers all the objects together and adjusts the matches until they agree. The top row uses different colors to distinguish the objects, while the bottom row shows their original appearance. The objects are displayed apart only to make the comparison easier to see.
           </figcaption>
         </figure>
       </div>
