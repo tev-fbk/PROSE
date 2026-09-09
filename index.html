@@ -229,6 +229,116 @@
 </section>
 <!-- End cycle-consistent correspondence refinement -->
 
+<!-- Quantitative results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Quantitative Results</h2>
+        <figure>
+          <div class="table-container quantitative-table-container">
+            <table class="table is-bordered is-fullwidth quantitative-table" aria-describedby="quantitative-results-caption">
+              <thead>
+                <tr>
+                  <th scope="col" rowspan="2">#</th>
+                  <th class="method-cell" scope="col" rowspan="2">Method</th>
+                  <th scope="colgroup" colspan="4">IC-BIN</th>
+                  <th scope="colgroup" colspan="4">IC-MI</th>
+                  <th scope="colgroup" colspan="4">XYZ-IBD</th>
+                </tr>
+                <tr>
+                  <th scope="col">AR &uarr;</th>
+                  <th scope="col">ADD(S) &uarr;</th>
+                  <th scope="col">RE (&deg;) &darr;</th>
+                  <th scope="col">TE (mm) &darr;</th>
+                  <th scope="col">AR &uarr;</th>
+                  <th scope="col">ADD(S) &uarr;</th>
+                  <th scope="col">RE (&deg;) &darr;</th>
+                  <th scope="col">TE (mm) &darr;</th>
+                  <th scope="col">AR &uarr;</th>
+                  <th scope="col">ADD(S) &uarr;</th>
+                  <th scope="col">RE (&deg;) &darr;</th>
+                  <th scope="col">TE (mm) &darr;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="row-number">1</td>
+                  <th class="method-cell" scope="row">One2Any</th>
+                  <td>17.7</td>
+                  <td>61.0</td>
+                  <td>70.5</td>
+                  <td>26.9</td>
+                  <td>47.7</td>
+                  <td>98.0</td>
+                  <td>47.2</td>
+                  <td>12.3</td>
+                  <td>9.2</td>
+                  <td>49.2</td>
+                  <td>85.0</td>
+                  <td>33.2</td>
+                </tr>
+                <tr>
+                  <td class="row-number">2</td>
+                  <th class="method-cell" scope="row">ConceptPose</th>
+                  <td>18.8</td>
+                  <td>58.8</td>
+                  <td>76.2</td>
+                  <td>36.6</td>
+                  <td>50.8</td>
+                  <td>80.2</td>
+                  <td>51.1</td>
+                  <td>29.1</td>
+                  <td>36.1</td>
+                  <td>70.1</td>
+                  <td>64.6</td>
+                  <td>24.4</td>
+                </tr>
+                <tr class="prose-result">
+                  <td class="row-number">3</td>
+                  <th class="method-cell" scope="row">PROSE (ours)</th>
+                  <td><strong>38.0</strong></td>
+                  <td><strong>83.3</strong></td>
+                  <td><strong>61.3</strong></td>
+                  <td><strong>16.8</strong></td>
+                  <td><strong>70.3</strong></td>
+                  <td><strong>100</strong></td>
+                  <td><strong>30.4</strong></td>
+                  <td><strong>4.6</strong></td>
+                  <td><strong>55.8</strong></td>
+                  <td><strong>92.1</strong></td>
+                  <td><strong>28.6</strong></td>
+                  <td><strong>9.1</strong></td>
+                </tr>
+                <tr class="improvement-result">
+                  <td class="row-number">4</td>
+                  <th class="method-cell" scope="row">Improvement</th>
+                  <td>+19.2</td>
+                  <td>+22.3</td>
+                  <td>&minus;9.2</td>
+                  <td>&minus;10.1</td>
+                  <td>+19.5</td>
+                  <td>+2.0</td>
+                  <td>&minus;16.8</td>
+                  <td>&minus;7.7</td>
+                  <td>+19.7</td>
+                  <td>+22.0</td>
+                  <td>&minus;36.0</td>
+                  <td>&minus;15.3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption id="quantitative-results-caption" class="content has-text-justified mt-4">
+            Results on PRENCH. Arrows indicate whether higher or lower values are better; PROSE is highlighted, and Improvement shows its margin over the strongest baseline.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End quantitative results -->
+
 <!-- Qualitative results -->
 <section class="section hero">
   <div class="container is-max-desktop">

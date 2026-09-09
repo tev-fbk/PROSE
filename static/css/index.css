@@ -81,6 +81,40 @@ body {
     color: inherit !important;
 }
 
+.quantitative-table-container {
+  overflow-x: auto;
+}
+
+.quantitative-table {
+  min-width: 1040px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.quantitative-table th,
+.quantitative-table td {
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+.quantitative-table .method-cell {
+  text-align: left !important;
+}
+
+.quantitative-table .row-number {
+  color: #777;
+  font-size: 0.85em;
+}
+
+.quantitative-table .prose-result {
+  background-color: #e8f6ff;
+}
+
+.quantitative-table .improvement-result td:not(.row-number) {
+  color: #16833d;
+}
+
 .author-block {
   display: inline-block;
 }
