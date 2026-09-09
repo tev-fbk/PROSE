@@ -27,6 +27,13 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.teaser-figure {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1090 / 442;
+  border: 0;
+}
+
 
 .publication-title {
 }
@@ -132,6 +139,5 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
 
 
