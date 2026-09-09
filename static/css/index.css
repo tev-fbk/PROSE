@@ -102,16 +102,11 @@ body {
   text-align: left !important;
 }
 
-.quantitative-table .row-number {
-  color: #777;
-  font-size: 0.85em;
-}
-
 .quantitative-table .prose-result {
   background-color: #e8f6ff;
 }
 
-.quantitative-table .improvement-result td:not(.row-number) {
+.quantitative-table .improvement-result td {
   color: #16833d;
 }
 
