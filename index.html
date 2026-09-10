@@ -222,7 +222,7 @@
         <h2 class="title is-3">Quantitative Results</h2>
         <figure>
           <div class="table-container quantitative-table-container">
-            <table class="table is-bordered is-fullwidth quantitative-table" aria-describedby="quantitative-results-caption quantitative-results-discussion">
+            <table class="table is-bordered is-fullwidth quantitative-table" aria-describedby="quantitative-results-caption">
               <thead>
                 <tr>
                   <th class="method-cell" scope="col" rowspan="2">Method</th>
@@ -312,11 +312,6 @@
           <figcaption id="quantitative-results-caption" class="content has-text-justified mt-4">
             Results on PRENCH. Arrows indicate whether higher or lower values are better; PROSE is highlighted, and Improvement shows its margin over the strongest baseline.
           </figcaption>
-          <div id="quantitative-results-discussion" class="content has-text-justified quantitative-results-discussion">
-            <p>
-              PROSE performs best across every metric on all three datasets. It improves average recall by about 19 points over the strongest competing method on each dataset, while also reducing both rotation and translation errors. The largest reductions in pose error occur on XYZ-IBD, showing that PROSE is particularly effective on challenging industrial objects with limited visual texture. Overall, the results show that jointly reasoning across multiple object instances improves the reliability and accuracy of the estimated poses.
-            </p>
-          </div>
         </figure>
       </div>
     </div>
@@ -365,7 +360,7 @@
 
           <h3 class="title is-5">Key Takeaways</h3>
           <ul>
-            <li>PROSE consistently improves both pose reliability and accuracy across all three datasets.</li>
+            <li>PROSE consistently achieves higher recall and lower pose errors across all three datasets.</li>
             <li>Its largest pose-error reductions occur on challenging industrial objects with limited visual texture.</li>
             <li>It removes the need for object-specific references and training, provided that multiple instances and depth information are available.</li>
           </ul>
