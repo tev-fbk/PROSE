@@ -352,6 +352,30 @@
 </section>
 <!-- End qualitative results -->
 
+<!-- Discussion -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Discussion</h2>
+        <div class="content has-text-justified">
+          <p>
+            Across all three PRENCH datasets, PROSE achieves the strongest performance on every reported metric, improving average recall by about 19 points over the strongest competing method while also reducing rotation and translation errors. This consistent improvement is important because the datasets cover different challenges, from densely packed everyday objects affected by self-occlusion to industrial components with limited visual texture. The qualitative results support the numerical findings: PROSE's predicted poses align more closely with the ground truth, while One2Any and ConceptPose often struggle when objects overlap or appearance provides too little information. These gains come from combining complementary semantic and geometric features and then refining the initial matches jointly across all visible object instances. By enforcing cycle consistency, PROSE can correct conflicting pairwise matches and use the instances in the scene as mutual references. The method is training-free and requires no CAD model, template, external reference image, or additional task-specific learned component, reducing the setup needed for new objects. Its scope is relative pose estimation from RGB-D observations containing multiple visible instances, so it does not replace absolute-pose approaches when only one instance or no depth information is available.
+          </p>
+
+          <h3 class="title is-5">Key Takeaways</h3>
+          <ul>
+            <li>PROSE consistently improves both pose reliability and accuracy across all three datasets.</li>
+            <li>Its largest pose-error reductions occur on challenging industrial objects with limited visual texture.</li>
+            <li>It removes the need for object-specific references and training, provided that multiple instances and depth information are available.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End discussion -->
+
 
 <!-- Temporarily commented out: unrelated template image carousel.
 <section class="hero is-small">
