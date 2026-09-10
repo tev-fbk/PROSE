@@ -115,7 +115,18 @@ body {
 }
 
 .quantitative-table tbody td {
+  background-color: #fff;
+  color: #111 !important;
   font-weight: 500;
+}
+
+.quantitative-table tbody th {
+  background-color: #fff;
+  color: #111 !important;
+}
+
+.quantitative-table strong {
+  color: inherit !important;
 }
 
 .quantitative-table .prose-result th,
@@ -124,7 +135,7 @@ body {
 }
 
 .quantitative-table .improvement-result td {
-  color: #116b32;
+  color: #116b32 !important;
   font-weight: 600;
 }
 
