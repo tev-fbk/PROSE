@@ -27,6 +27,17 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.teaser-setting-labels {
+  display: grid;
+  grid-template-columns: 54% 46%;
+  margin-bottom: 0.5rem;
+  font-family: 'Google Sans', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .publication-title {
 }
 
