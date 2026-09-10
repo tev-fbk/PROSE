@@ -83,31 +83,48 @@ body {
 
 .quantitative-table-container {
   overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.container.quantitative-results-container {
+  max-width: 1400px !important;
 }
 
 .quantitative-table {
-  min-width: 1040px;
+  min-width: 1180px;
   margin: 0 auto;
-  font-size: 0.85rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
 .quantitative-table th,
 .quantitative-table td {
+  padding: 0.7em 0.75em;
   text-align: center !important;
   vertical-align: middle;
+}
+
+.quantitative-table thead th {
+  background-color: #edf2f7;
+  color: #1f2933;
 }
 
 .quantitative-table .method-cell {
   text-align: left !important;
 }
 
-.quantitative-table .prose-result {
-  background-color: #e8f6ff;
+.quantitative-table .prose-result th,
+.quantitative-table .prose-result td {
+  background-color: #dff3ff;
 }
 
 .quantitative-table .improvement-result td {
-  color: #16833d;
+  color: #116b32;
+  font-weight: 600;
+}
+
+.quantitative-results-discussion {
+  margin-top: 1rem;
 }
 
 .author-block {

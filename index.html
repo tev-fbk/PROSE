@@ -122,7 +122,7 @@
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span>Paper</span>
                   </a>
                 </span>
 
@@ -220,13 +220,13 @@
 
 <!-- Quantitative results -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
+  <div class="container quantitative-results-container">
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Quantitative Results</h2>
         <figure>
           <div class="table-container quantitative-table-container">
-            <table class="table is-bordered is-fullwidth quantitative-table" aria-describedby="quantitative-results-caption">
+            <table class="table is-bordered is-fullwidth quantitative-table" aria-describedby="quantitative-results-caption quantitative-results-discussion">
               <thead>
                 <tr>
                   <th class="method-cell" scope="col" rowspan="2">Method</th>
@@ -316,6 +316,11 @@
           <figcaption id="quantitative-results-caption" class="content has-text-justified mt-4">
             Results on PRENCH. Arrows indicate whether higher or lower values are better; PROSE is highlighted, and Improvement shows its margin over the strongest baseline.
           </figcaption>
+          <div id="quantitative-results-discussion" class="content has-text-justified quantitative-results-discussion">
+            <p>
+              PROSE performs best across every metric on all three datasets. It improves average recall by about 19 points over the strongest competing method on each dataset, while also reducing both rotation and translation errors. The largest reductions in pose error occur on XYZ-IBD, showing that PROSE is particularly effective on challenging industrial objects with limited visual texture. Overall, the results show that jointly reasoning across multiple object instances improves the reliability and accuracy of the estimated poses.
+            </p>
+          </div>
         </figure>
       </div>
     </div>
