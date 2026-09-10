@@ -87,19 +87,20 @@ body {
 }
 
 .container.quantitative-results-container {
-  max-width: 1400px !important;
+  max-width: 1680px !important;
 }
 
 .quantitative-table {
-  min-width: 1180px;
+  min-width: 1500px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
 .quantitative-table th,
 .quantitative-table td {
-  padding: 0.7em 0.75em;
+  padding: 0.85em 1em;
   text-align: center !important;
   vertical-align: middle;
 }
@@ -111,6 +112,10 @@ body {
 
 .quantitative-table .method-cell {
   text-align: left !important;
+}
+
+.quantitative-table tbody td {
+  font-weight: 500;
 }
 
 .quantitative-table .prose-result th,
