@@ -199,6 +199,28 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Method overview -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Method Overview</h2>
+        <figure>
+          <img
+            src="static/images/new_block_diagram.svg"
+            alt="Block diagram of the PROSE pipeline: RGB-D input with instance masks, feature extraction and lifting, initial pairwise matches, cross-instance refinement, and relative 6D pose estimation"
+            loading="lazy"
+          >
+          <figcaption class="content has-text-justified mt-4">
+            Overview of PROSE. Given an RGB-D image and instance masks (a), each instance is lifted to a 3D point cloud and described by fused semantic (DINOv2) and geometric (dGeDi) features (b). These features yield initial pairwise matches between instances (c), which are refined jointly across all instances by enforcing cycle consistency (d). The refined correspondences are then used to estimate the relative 6D pose between any pair of instances (e).
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
 <!-- Cycle-consistent correspondence refinement -->
 <section class="section hero">
   <div class="container is-max-desktop">
