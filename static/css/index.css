@@ -97,6 +97,16 @@ body {
   padding-bottom: 0.35rem;
 }
 
+.container.method-overview-container {
+  max-width: 1400px !important;
+}
+
+.method-overview-container figcaption {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container.quantitative-results-container {
   max-width: 1680px !important;
 }

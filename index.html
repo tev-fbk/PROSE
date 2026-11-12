@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css?v=20260910-1">
+  <link rel="stylesheet" href="static/css/index.css?v=20261112-1">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -201,7 +201,7 @@
 
 <!-- Method overview -->
 <section class="section hero">
-  <div class="container is-max-desktop">
+  <div class="container method-overview-container">
     <div class="columns is-centered has-text-centered">
       <div class="column">
         <h2 class="title is-3">Method Overview</h2>
@@ -375,6 +375,41 @@
   </div>
 </section>
 <!-- End qualitative results -->
+
+<!-- Cycle consistency successes and failures -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Cycle Consistency: Successes and Failures</h2>
+        <figure>
+          <div class="columns is-mobile is-variable is-2 mb-0">
+            <div class="column">
+              <img
+                src="static/images/cycle_consistency_success_textured.svg"
+                alt="Three instance triplets where cycle-consistency refinement turns inconsistent coarse correspondences into three correct ones"
+                loading="lazy"
+              >
+              <p><strong>(a) Success cases</strong></p>
+            </div>
+            <div class="column">
+              <img
+                src="static/images/cycle_consistency_failures_textured.svg"
+                alt="Three instance triplets where cycle-consistency refinement closes the cycle but converges to geometrically wrong correspondences"
+                loading="lazy"
+              >
+              <p><strong>(b) Failure cases</strong></p>
+            </div>
+          </div>
+          <figcaption class="content has-text-justified mt-4">
+            Each row is one instance triplet (anchor <em>X<sub>k</sub></em>, mediator <em>X<sub>j</sub></em>, target <em>X<sub>i</sub></em>); the <em>left</em> column shows the coarse (independent nearest-neighbour) correspondences and the <em>right</em> column the correspondences after cycle-consistency refinement. Green/red lines are symmetry-aware inlier/outlier correspondences and the dashed red line is the cycle-closure gap. <strong>(a) Successes:</strong> the coarse matches are inconsistent (closure gaps of 42&ndash;96&nbsp;mm and only 0&ndash;2 of 3 inliers), and refinement closes the cycle (gap &rarr; 0) while recovering all three correct edges (3/3 inliers). <strong>(b) Failures:</strong> refinement still closes the cycle (gap &rarr; 0) but converges to a geometrically wrong solution (0/3 inliers); in the first two rows it even discards the single correct coarse edge (1/3 &rarr; 0/3), illustrating that cycle consistency enforces mutual agreement, not ground-truth correctness.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End cycle consistency successes and failures -->
 
 <!-- Discussion -->
 <section class="section hero is-light">
