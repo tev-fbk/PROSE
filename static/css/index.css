@@ -129,14 +129,11 @@ body {
 }
 
 .venue-badge img {
-  height: 2.2em;
+  height: 3.5em;
   width: auto;
+  max-width: 70vw;
+  object-fit: contain;
   border-radius: 6px;
-}
-
-.venue-badge-name {
-  font-weight: 700;
-  color: #b57a22;
 }
 
 .venue-badge::before {
